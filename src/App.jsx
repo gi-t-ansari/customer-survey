@@ -1,12 +1,17 @@
-import React from 'react'
-import './App.css'
+import React from "react";
+import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { APP_URL } from "./config";
+import { CustomerSurvey } from "./pages";
 
 function App() {
-  
-
   return (
-    <h1 className="text-3xl font-bold underline text-red-500 text-center">Hello world!</h1>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path={APP_URL.HOME} element={<CustomerSurvey />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

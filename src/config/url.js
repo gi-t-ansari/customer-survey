@@ -1,3 +1,4 @@
 export const APP_URL = {
-    HOME: "/"
+    HOME: "/",
+    THANKS: "thanks"
 }
